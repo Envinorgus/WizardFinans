@@ -1,0 +1,16 @@
+@use './variables' as *;
+
+* {
+    list-style-type: none;
+    font-family: $custom-font;
+}
+
+body {
+   background-color: #fff;;
+}
+
+.wrapper {
+    max-width: 1440px;
+    height: auto;
+}
+

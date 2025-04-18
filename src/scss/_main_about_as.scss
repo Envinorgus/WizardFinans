@@ -1,0 +1,41 @@
+@use './variables' as *;
+
+.main_about-as {
+    display: flex;
+    align-items: center;
+    gap:100px;
+    max-width: 1400px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.main_about-as-img {
+    width: 300px; /* Фиксированная ширина */
+    flex: 0 0 238px;
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    margin-left: auto;
+    margin-right: 100px;
+  }
+
+.main_about-as-content {
+    width: 250px;
+}
+
+.about_as-heading {
+    height: 10%;
+    width: 250px;
+}
+
+.about-as-button {
+    background-color: $dark-color;
+    width: 200px;
+    height: 34px;
+    border-radius: 14px;
+    color: white;
+
+    &:hover {
+        background-color: aqua;
+        transition: background-color 0.3s ease ;
+    }
+    
+}

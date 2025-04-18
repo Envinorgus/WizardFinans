@@ -1,0 +1,112 @@
+@use './variables' as *;
+
+.header {
+    width: 100%;
+    .header__nav {
+        display: flex;
+        width: 100%;
+        border-bottom: 0.3px solid $grey-color;
+  }
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    gap: 10px;
+    align-items: center;
+    font-family: $custom-font;
+    margin-top: -4px;
+    
+    .nav__logo {
+        width: 219px;
+        height: 56px;
+        margin-top: 66px;
+
+        .menu_item {
+            .menu_item {
+                display: inline-block; /* Элементы располагаются в строку */
+                max-width: 88px; /* Минимальная ширина */
+                text-align: center; /* Выравнивание текста по центру */
+              }
+
+        }
+    
+
+    }
+}
+
+.menu_item-link {
+    
+    text-decoration: none;
+    color: $black-color;
+    white-space: nowrap;
+    align-items: center;
+    margin-top: -30px;
+    
+}
+
+.menu_item-link {
+    display: inline-block;
+    width: 80px;
+    height: 10px;
+    text-align: center;
+    font-size: 10px;
+
+}
+
+.menu_item-link:hover {
+    position: relative;
+    padding-bottom: 5px;
+    box-shadow: 0 2px 2px $green-color;
+    transition: border-bottom 0.5s ease;
+}
+
+.menu_button {
+    max-width: 231px;
+    height: 34px;
+    background-color: white;
+    border: 1px solid $dark-color;
+    border-radius: 14px;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 10px;
+
+}
+
+.menu_button:hover {
+    border-color: $green-color;
+    transition: border-color 0.5s ease;
+}
+
+.nav__logo-img  {
+    height: 40px;
+    width: auto;
+    margin-left: 25px;
+}
+
+
+
+
+/*--------------------------------test*/
+
+  
+/* Стиль бокового меню (по умолчанию скрыто) */
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: -300px; /* Меню находится за пределами экрана */
+    width: 300px;
+    height: 100%;
+    background-color: #f8f9fa;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease; /* Плавное появление */
+    z-index: 1000;
+  }
+
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
