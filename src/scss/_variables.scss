@@ -1,4 +1,14 @@
 @font-face {
+    font-family: 'SpaceGrotesk-Bold';
+    src: url('../fonts/SpaceGrotesk-SemiBold.ttf') format('ttf'),
+         url('../fonts/SpaceGrotesk-SemiBold.woff') format('woff'),
+         url('../fonts/SpaceGrotesk-SemiBold.woff2') format('woff2');
+         
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'SpaceGrotesk-Regular';
     src: url('../fonts/SpaceGrotesk-Regular.ttf') format('ttf'),
          url('../fonts/SpaceGrotesk-Regular.woff') format('woff'),
@@ -10,6 +20,7 @@
 
 
 $custom-font:'SpaceGrotesk-Regular';
+$custom-font-bold:'SpaceGrotesk-Bold';
 
 $green-color: #B9FF66;
 $grey-color:#F3F3F3;

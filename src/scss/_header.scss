@@ -1,7 +1,14 @@
 @use './variables' as *;
 
+.wrapper {
+    max-width: 1100px;
+    min-width: 800px;
+    margin: 0 auto;
+}
+
 .header {
     width: 100%;
+    box-sizing: border-box;
     .header__nav {
         display: flex;
         width: 100%;
@@ -17,6 +24,7 @@
     align-items: center;
     font-family: $custom-font;
     margin-top: -4px;
+    
     
     .nav__logo {
         width: 219px;

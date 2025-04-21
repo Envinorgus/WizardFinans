@@ -3,6 +3,8 @@
 * {
     list-style-type: none;
     font-family: $custom-font;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
@@ -13,4 +15,18 @@ body {
     max-width: 1440px;
     height: auto;
 }
+
+.services-list {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.services-list {
+    max-width: 1000px;
+    min-width: 950px;
+    gap: 20px;
+    
+}
+
 
