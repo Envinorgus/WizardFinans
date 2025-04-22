@@ -9,6 +9,7 @@
 .header {
     width: 100%;
     box-sizing: border-box;
+    margin-left: 60px;
     .header__nav {
         display: flex;
         width: 100%;
@@ -104,8 +105,8 @@
 .sidebar {
     position: absolute;
     top: 0;
-    left: -300px; /* Меню находится за пределами экрана */
-    width: 300px;
+    left: -200px; /* Меню находится за пределами экрана */
+    width: 200px;
     height: 100%;
     background-color: #f8f9fa;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
@@ -118,3 +119,6 @@
     color: #333;
     font-size: 16px;
   }
+
+
+
