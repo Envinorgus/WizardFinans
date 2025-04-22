@@ -3,10 +3,10 @@
 .main_about-as {
     display: flex;
     align-items: center;
-    gap:100px;
+    gap:9.09%;
     max-width: 1400px;
     margin-top: 50px;
-    margin-left: 100px;
+    margin-left: 9.09%;
 }
 
 .main_about-as-img {
@@ -38,4 +38,44 @@
         transition: background-color 0.3s ease ;
     }
     
+}
+
+@media (max-width: $mobile) {
+
+    .main_about-as {
+        width: 100%;
+    }
+
+    .about-as-text {
+        display: none;
+    }
+
+    .about-as-button {
+        display: none;
+    }
+
+    .main_about-as {
+        flex-direction: column;
+        margin-left: 0;
+
+    }
+
+    .about_as-heading {
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 15px;
+        margin-left: 100px;
+    }
+
+    .main_about-as-content {
+        width: 100%;
+    }
+
+    .main_about-as-img  {
+        margin-left: 100px;
+    }
+
+
+
+
 }

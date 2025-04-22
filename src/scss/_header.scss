@@ -1,5 +1,6 @@
 @use './variables' as *;
 
+
 .wrapper {
     max-width: 1100px;
     min-width: 800px;
@@ -9,11 +10,13 @@
 .header {
     width: 100%;
     box-sizing: border-box;
-    margin-left: 60px;
+    
+    
     .header__nav {
         display: flex;
         width: 100%;
         border-bottom: 0.3px solid $grey-color;
+        
   }
 }
 
@@ -21,7 +24,7 @@
     display: flex;
     justify-content: center;
     margin-left: auto;
-    gap: 10px;
+    gap: 0.9vw;
     align-items: center;
     font-family: $custom-font;
     margin-top: -4px;
@@ -92,8 +95,17 @@
 .nav__logo-img  {
     height: 40px;
     width: auto;
-    margin-left: 25px;
+    margin-left: 100px;
+    
 }
+
+.menu_burger {
+    display: none;
+}
+
+
+
+
 
 
 
@@ -105,8 +117,8 @@
 .sidebar {
     position: absolute;
     top: 0;
-    left: -200px; /* Меню находится за пределами экрана */
-    width: 200px;
+    left: -310px; /* Меню находится за пределами экрана */
+    width: 300px;
     height: 100%;
     background-color: #f8f9fa;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
@@ -121,4 +133,38 @@
   }
 
 
+@media (max-width: $mobile) {
 
+    .wrapper {
+        max-width: 768px;
+        min-width: 430px;
+        margin-left: 5%;
+    }
+
+    .header {
+        max-width: 768px;
+    }
+
+    .menu_item--hide {
+        display: none;
+    }
+
+    .menu_burger {
+        display: block;
+    }
+
+    .menu_burger-img {
+        width: 39px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+
+
+
+
+
+
+
+
+}

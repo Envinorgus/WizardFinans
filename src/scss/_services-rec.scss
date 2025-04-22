@@ -82,3 +82,25 @@
     }
 }
 
+
+@media (max-width: $mobile) {
+
+
+
+.services-list {
+    flex-direction: column;
+}
+
+.services-list_item-write {
+    margin-left: 100px;
+}
+
+.services-list_item-rec {
+    width: 300px;
+}
+
+.services-list_item-rec-img {
+    display: none;
+}
+
+}
